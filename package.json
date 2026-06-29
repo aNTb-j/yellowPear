@@ -1,0 +1,21 @@
+{
+  "name": "my-page",
+  "version": "1.0.0",
+  "description": "Development of my website",
+  "repository": {
+    "type": "git",
+    "url": "my-website"
+  },
+  "license": "ISC",
+  "author": "Joaquin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/scss/style.scss public/css/style.css",
+    "watch": "sass --watch src/scss/style.scss public/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}
