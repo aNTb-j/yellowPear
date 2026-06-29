@@ -1,0 +1,61 @@
+:root {
+  --var1: hsl(33, 64%, 42%);
+  --toggle: hsl(0, 0%, 12%);
+}
+
+:root {
+  --font-intern: ;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-intern);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+.card {
+  padding: 1.25rem;
+}
+
+.toggle__button {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--toggle);
+}
+
+body {
+  background: #222;
+  color: white;
+}
+
+h1 {
+  color: red;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

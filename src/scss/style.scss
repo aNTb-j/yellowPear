@@ -1,8 +1,21 @@
 @use "globals";
-@use "utils";
+@use "util";
 @use "components";
 
 // estilos generales
 body {
-    font-family: Arial, sans-serif;
+    background: #222;
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
