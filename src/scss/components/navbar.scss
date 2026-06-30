@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint-down(small) {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @include breakpoint(medium) {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @include breakpoint(large) {
+        justify-content: space-around;
+        align-items: center;
+    }
+}
