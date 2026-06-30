@@ -1,5 +1,5 @@
 :root {
-  /* Dark Theme */
+  /* Dark palette */
   --dark-background: hsl(230, 17%, 14%);
   --dark-surface: hsl(232, 19%, 15%);
   --dark-panel: hsl(228, 28%, 20%);
@@ -8,7 +8,7 @@
   --dark-border: hsl(228, 28%, 20%);
   --dark-text1: hsl(228, 34%, 66%);
   --dark-text2: hsl(0, 0%, 100%);
-  /* Light Theme */
+  /* Light palette */
   --light-background: hsl(0, 0%, 100%);
   --light-surface: hsl(225, 100%, 98%);
   --light-panel: hsl(227, 47%, 96%);
@@ -17,6 +17,9 @@
   --light-border: hsl(228, 12%, 44%);
   --light-text1: hsl(228, 12%, 44%);
   --light-text2: hsl(230, 17%, 14%);
+}
+
+:root {
   --background: var(--light-background);
   --surface: var(--light-surface);
   --panel: var(--light-panel);
@@ -25,6 +28,17 @@
   --border: var(--light-border);
   --text1: var(--light-text1);
   --text2: var(--light-text2);
+}
+
+[data-theme=dark] {
+  --background: var(--dark-background);
+  --surface: var(--dark-surface);
+  --panel: var(--dark-panel);
+  --card: var(--dark-card);
+  --card-hover: var(--dark-card-hover);
+  --border: var(--dark-border);
+  --text1: var(--dark-text1);
+  --text2: var(--dark-text2);
 }
 
 :root {
@@ -165,7 +179,8 @@ a, a:visited, a:active {
 }
 
 body {
-  color: var(text1);
+  background: var(--background);
+  color: var(--text2);
 }
 
 .title-secction-2 {
