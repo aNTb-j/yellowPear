@@ -1,0 +1,28 @@
+@use '../util' as *;
+
+.hero-animation {
+    text-align: center;
+
+    p {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .pear-animation {
+        color: #7CFF5B;
+        animation: hackerBlink 2.5s infinite;
+    }
+}
+
+@keyframes hackerBlink {
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 8px currentColor;
+    }
+
+    50% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}

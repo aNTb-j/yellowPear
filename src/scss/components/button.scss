@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+#application-button {
+  padding: 15px 20px;
+  border: 2px solid var(--text1);
+  border-color: var(--text1);
+  outline: none;
+  background-color: var(--background);
+  color: var(--text2);
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+#application-button:hover {
+  transform: translateY(-3px);
+}
+
+#application-button-span {
+  color: var(--text1);
+}

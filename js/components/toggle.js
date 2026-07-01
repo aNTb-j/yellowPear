@@ -1,15 +1,16 @@
 export function initThemeToggle() {
-    const toggleBtn = document.getElementById("toggle_button");
+    const toggle = document.querySelector(".switch input");
     const html = document.documentElement;
 
-    toggleBtn.addEventListener("click", () => {
-        const dark = html.getAttribute("data-theme") === "dark";
+    const savedTheme = localStorage.getItem("theme") || "light";
 
-        toggleBtn.textContent = dark ? "L" : "D";
+    html.setAttribute("data-theme", savedTheme);
+    toggle.checked = savedTheme === "dark";
 
-        html.setAttribute(
-            "data-theme",
-            dark ? "light" : "dark"
-        );
+    toggle.addEventListener("change", () => {
+        const newTheme = toggle.checked ? "dark" : "light";
+
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
     });
 }

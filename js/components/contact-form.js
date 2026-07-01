@@ -1,0 +1,1 @@
+const application = document.getElementById("application-button")

@@ -4,12 +4,8 @@
 
 // estilos generales
 body {
-    background: var(--background);
+    background: var(--background); //Si borro esto el toggle se aplica a las cards 
+    font-family: var(--font-primary);
     color: var(--text2);
 }
 
-.title-secction-2 {
-    display: flex;
-    flex-wrap: wrap;
-    
-}

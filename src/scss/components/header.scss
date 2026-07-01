@@ -22,4 +22,12 @@
             width: auto;
         }
     }
+
+    &__toggle {
+        width: 100%;
+        border-width: 0;
+        @include breakpoint(medium) {
+            width: auto;
+        }
+    }
 }

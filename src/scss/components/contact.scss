@@ -1,6 +1,7 @@
 @use '../util' as *;
 
 .contact {
+    line-height: rem(100);
     display: flex;
     justify-content: center;
 
