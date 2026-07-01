@@ -3,9 +3,14 @@
 .hero-animation {
     text-align: center;
 
-    p {
-        font-size: 4rem;
+    h1 {
+        line-height: 2.2;
+        font-size: clamp(rem(30), 8vw, rem(90));
         font-weight: 700;
+    }
+
+    p {
+        font-size: rem(30);
     }
 
     .pear-animation {
@@ -22,7 +27,7 @@
     }
 
     50% {
-        opacity: 0;
+        opacity: 1%;
         text-shadow: none;
     }
 }

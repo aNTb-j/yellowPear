@@ -26,19 +26,19 @@
     background-color: var(--card);
     border: 1px solid var(--border);
     
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: rem(0);
+    padding: rem(16);
+    box-shadow: 0 rem(4) 6px rgba(0, 0, 0, 0.05);
 
     &__webdev {
-       border-top: 3px solid red;;
+       border-top: rem(5) solid rgb(0, 110, 255);;
     }
 
     &__datascience {
-       border-top: 3px solid red;;
+       border-top: rem(5) solid rgb(255, 140, 0);;
     }
 
     &__database {
-       border-top: 3px solid red;;
+       border-top: rem(5) solid rgb(76, 79, 34);;
     }
 }

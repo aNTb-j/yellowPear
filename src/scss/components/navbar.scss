@@ -3,6 +3,27 @@
 .navbar {
     display: flex;
     flex-wrap: wrap;
+    
+    a {
+        position: relative;
+        text-decoration: none;
+        color: var(--text2);
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background: #7CFF5B;
+        transition: width .25s ease;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
 
     @include breakpoint-down(small) {
         justify-content: space-around;

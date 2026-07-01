@@ -91,6 +91,19 @@ a, a:visited, a:active {
   }
 }
 
+.crt {
+  position: relative;
+}
+
+.crt::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.03), rgba(0, 0, 255, 0.06));
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -118,18 +131,18 @@ a, a:visited, a:active {
 .card {
   background-color: var(--card);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 0rem;
+  padding: 1rem;
+  box-shadow: 0 0.25rem 6px rgba(0, 0, 0, 0.05);
 }
 .card__webdev {
-  border-top: 3px solid red;
+  border-top: 0.3125rem solid rgb(0, 110, 255);
 }
 .card__datascience {
-  border-top: 3px solid red;
+  border-top: 0.3125rem solid rgb(255, 140, 0);
 }
 .card__database {
-  border-top: 3px solid red;
+  border-top: 0.3125rem solid rgb(76, 79, 34);
 }
 
 .header {
@@ -170,9 +183,13 @@ a, a:visited, a:active {
 .hero-animation {
   text-align: center;
 }
-.hero-animation p {
-  font-size: 4rem;
+.hero-animation h1 {
+  line-height: 2.2;
+  font-size: clamp(1.875rem, 8vw, 5.625rem);
   font-weight: 700;
+}
+.hero-animation p {
+  font-size: 1.875rem;
 }
 .hero-animation .pear-animation {
   color: #7CFF5B;
@@ -185,13 +202,31 @@ a, a:visited, a:active {
     text-shadow: 0 0 8px currentColor;
   }
   50% {
-    opacity: 0;
+    opacity: 1%;
     text-shadow: none;
   }
 }
 .navbar {
   display: flex;
   flex-wrap: wrap;
+}
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text2);
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #7CFF5B;
+  transition: width 0.25s ease;
+}
+.navbar a:hover::after {
+  width: 100%;
 }
 @media (max-width: 39.9375em) {
   .navbar {
