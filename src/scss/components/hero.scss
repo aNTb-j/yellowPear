@@ -4,12 +4,13 @@
     text-align: center;
 
     h1 {
-        line-height: 2.2;
         font-size: clamp(rem(30), 8vw, rem(90));
         font-weight: 700;
+        margin: 0;
     }
 
     p {
+        margin-top: 0;  
         font-size: rem(30);
     }
 

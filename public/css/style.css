@@ -146,9 +146,9 @@ a, a:visited, a:active {
 }
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 @media (max-width: 39.9375em) {
   .header {
@@ -184,11 +184,12 @@ a, a:visited, a:active {
   text-align: center;
 }
 .hero-animation h1 {
-  line-height: 2.2;
   font-size: clamp(1.875rem, 8vw, 5.625rem);
   font-weight: 700;
+  margin: 0;
 }
 .hero-animation p {
+  margin-top: 0;
   font-size: 1.875rem;
 }
 .hero-animation .pear-animation {

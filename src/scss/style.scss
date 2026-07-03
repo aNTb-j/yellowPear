@@ -2,7 +2,8 @@
 @use "util";
 @use "components";
 
-// estilos generales
+
+
 body {
     background: var(--background); //Si borro esto el toggle se aplica a las cards 
     font-family: var(--font-primary);
