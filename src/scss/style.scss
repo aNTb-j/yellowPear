@@ -10,3 +10,15 @@ body {
     color: var(--text2);
 }
 
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+}
+
+code,
+pre,
+.hero-animation {
+    font-family: var(--font-mono);
+}

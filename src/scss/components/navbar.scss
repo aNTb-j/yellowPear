@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: wrap;
 
-
     a {
         position: relative;
         text-decoration: none;
@@ -18,12 +17,40 @@
         bottom: -4px;
         width: 0;
         height: 2px;
-        background: #7CFF5B;
+        background: var(--accent);
         transition: width .25s ease;
     }
 
     a:hover::after {
         width: 100%;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        color: var(--text2);
+    }
+
+    &__links {
+        display: flex;
+        gap: rem(100);
+        padding: rem(15) rem(50);
+        border-radius: 999px;
+
+        background: var(--panel);
+        border: 1px solid var(--border);
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        padding: rem(5) rem(25);
+
+        border-radius: 999px;
+
+        background: var(--panel);
+        border: 1px solid var(--border);
     }
 
     @include breakpoint-down(small) {

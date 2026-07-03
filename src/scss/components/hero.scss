@@ -1,7 +1,9 @@
 @use '../util' as *;
 
 .hero-animation {
+    margin-top: 10%;
     text-align: center;
+    margin-bottom: 10%;
 
     h1 {
         font-size: clamp(rem(30), 8vw, rem(90));
@@ -15,7 +17,7 @@
     }
 
     .pear-animation {
-        color: #7CFF5B;
+        color: var(--accent);
         animation: hackerBlink 2.5s infinite;
     }
 }

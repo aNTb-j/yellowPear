@@ -31,14 +31,14 @@
     box-shadow: 0 rem(4) 6px rgba(0, 0, 0, 0.05);
 
     &__webdev {
-       border-top: rem(5) solid rgb(0, 110, 255);;
+       border-top: rem(5) solid var(--accent);;
     }
 
     &__datascience {
-       border-top: rem(5) solid rgb(255, 140, 0);;
+       border-top: rem(5) solid var(--accent);;
     }
 
     &__database {
-       border-top: rem(5) solid rgb(76, 79, 34);;
+       border-top: rem(5) solid var(--accent);;
     }
 }

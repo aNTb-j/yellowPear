@@ -11,14 +11,14 @@
 
     background:
         linear-gradient(
-            rgba(18, 16, 16, 0) 50%,
-            rgba(0, 0, 0, 0.25) 50%
+            transparent 50%,
+            var(--crt-scanline) 50%
         ),
         linear-gradient(
             90deg,
-            rgba(255, 0, 0, 0.06),
-            rgba(0, 255, 0, 0.03),
-            rgba(0, 0, 255, 0.06)
+            var(--crt-red),
+            var(--crt-green),
+            var(--crt-blue)
         );
 
     background-size:
