@@ -2,14 +2,11 @@
 @use "util";
 @use "components";
 
-
-
 body {
     background: var(--background); //Si borro esto el toggle se aplica a las cards 
     font-family: var(--font-primary);
     color: var(--text2);
 }
-
 
 h1,
 h2,

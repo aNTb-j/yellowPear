@@ -1,0 +1,76 @@
+@use '../util' as *;
+
+#contact-form {
+    max-width: rem(800);
+    margin: 0 auto;
+    padding: rem(40);
+
+    display: grid;
+    gap: rem(24);
+
+    background-color: var(--background);
+    border: rem(2) solid var(--text1);
+    border-radius: rem(0);
+    box-shadow: 8px 8px 0px 0px var(--accent);
+
+    input,
+    textarea {
+        width: 100%;
+        padding: rem(16);
+
+        background-color: transparent;
+        color: var(--text2);
+
+        border: rem(2) solid var(--text1);
+        border-radius: rem(0);
+
+        font-size: rem(16);
+        font-family: inherit;
+
+        transition: .2s ease;
+
+        &::placeholder {
+            color: var(--text1);
+            opacity: .6;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: #7CFF5B;
+            box-shadow: 0 0 rem(10) rgba(124, 255, 91, .25);
+        }
+    }
+
+    textarea {
+        min-height: rem(180);
+        resize: vertical;
+    }
+
+    button {
+        justify-self: start;
+
+        padding: rem(14) rem(28);
+
+        background-color: #7CFF5B;
+        color: #111;
+
+        border: rem(2) solid #7CFF5B;
+        border-radius: rem(8);
+
+        font-size: rem(16);
+        font-weight: 600;
+
+        cursor: pointer;
+        transition: .2s ease;
+
+        &:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: rem(5) rem(5) 0 hsla(0, 0%, 0%, 0.809);
+        }
+
+        &:active {
+            transform: translate(0);
+            box-shadow: none;
+        }
+    }
+}
