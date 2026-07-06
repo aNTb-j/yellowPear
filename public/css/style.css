@@ -361,11 +361,22 @@ a, a:visited, a:active {
   border: 0.125rem solid var(--text1);
   border-radius: 0rem;
   box-shadow: 8px 8px 0px 0px var(--accent);
+  font-family: "Space Grotesc", monospace;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+#contact-form .form-row {
+  margin-bottom: 0.5rem;
+}
+#contact-form .form-group {
+  margin-top: 0.5rem;
 }
 #contact-form input,
 #contact-form textarea {
   width: 100%;
   padding: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
   background-color: transparent;
   color: var(--text2);
   border: 0.125rem solid var(--text1);
@@ -373,6 +384,11 @@ a, a:visited, a:active {
   font-size: 1rem;
   font-family: inherit;
   transition: 0.2s ease;
+  font-size: 18px;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 var(--accent);
 }
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
@@ -382,32 +398,20 @@ a, a:visited, a:active {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  border-color: #7CFF5B;
-  box-shadow: 0 0 0.625rem rgba(124, 255, 91, 0.25);
+  border-color: var(--accent);
+  box-shadow: 0 0 0.625rem var(--accent);
 }
 #contact-form textarea {
   min-height: 11.25rem;
   resize: vertical;
 }
 #contact-form button {
-  justify-self: start;
-  padding: 0.875rem 1.75rem;
-  background-color: #7CFF5B;
-  color: #111;
-  border: 0.125rem solid #7CFF5B;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-#contact-form button:hover {
-  transform: translate(-3px, -3px);
-  box-shadow: 0.3125rem 0.3125rem 0 hsla(0, 0%, 0%, 0.809);
-}
-#contact-form button:active {
-  transform: translate(0);
-  box-shadow: none;
+  margin-top: 3.125rem;
+  margin-left: 3.125rem;
+  margin-right: 3.125rem;
+  line-height: 4.2;
+  background-color: transparent;
+  border: 0rem solid var(--text1);
 }
 
 .theme-actions,
